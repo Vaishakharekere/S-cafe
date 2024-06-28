@@ -8,8 +8,8 @@ import { Container, Row, Col, Card, Image ,Button} from 'react-bootstrap';
 const menuData = [
   {
     id: 1,
-    name: 'Burger',
-    description: 'Juicy beef burger with lettuce, tomato, and cheese',
+    name: 'Paneer butter masala',
+    description: 'Paneer  butter masala spicy gravy',
     price: 10.99,
     image: 'special1.jpg'
   },
@@ -26,7 +26,58 @@ const menuData = [
     description: 'Fresh mixed greens with cherry tomatoes and balsamic vinaigrette',
     price: 8.99,
     image: 'special3.jpg'
+  },
+  {
+    id: 4,
+    name: 'sandwich',
+    description: 'spicy mix sandwich',
+    price: 8.99,
+    image: 'sandwich.jpg'
+  },
+  {
+    id: 5,
+    name: 'Roti',
+    description: 'Fresh mixed gravy with tasty Rotis',
+    price: 8.99,
+    image: 'item5.jpeg'
+  },
+  {
+    id: 6,
+    name: 'Paneer Masala ',
+    description: 'Fresh mixed paneer',
+    price: 8.99,
+    image: 'item6.jpeg'
+  },
+  {
+    id: 7,
+    name: 'Pani puri',
+    description: 'Delicious spicy pani puri ',
+    price: 5,
+    image: 'item7.jpeg'
+  },
+  {
+    id: 8,
+    name: 'kaju masala',
+    description: 'Fresh mixed gravy with kaju and spics',
+    price: 10.99,
+    image: 'item8.jpeg'
+  },
+
+  {
+    id: 9,
+    name: 'Gobi manchurian',
+    description: 'Fresh mixed Gobi manchurian',
+    price: 13.99,
+    image: 'item9.jpeg'
+  },
+  {
+    id: 10,
+    name: 'Oreo Milkshake',
+    description: 'Fresh jiuce prepared from oreo and flavours',
+    price: 4.99,
+    image: 'item10.jpeg'
   }
+
 ];
 
 
