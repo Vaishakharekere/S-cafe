@@ -9,10 +9,10 @@ const Specials = () => {
       <Row>
         <Col md={4} className="mb-4">
           <Card>
-            <Card.Img variant="top" src="special1.jpg" />
+            <Card.Img variant="top" src="special4.jpeg" />
             <Card.Body>
-              <Card.Title>Special Dish 1</Card.Title>
-              <Card.Text>Description of special dish 1.</Card.Text>
+              <Card.Title>Paneer Butter Masala</Card.Title>
+              <Card.Text>Paneer Butter Masala is a rich and creamy North Indian curry made with paneer in a spiced tomato and butter gravy.</Card.Text>
             </Card.Body>
           </Card>
         </Col>
@@ -20,17 +20,17 @@ const Specials = () => {
           <Card>
             <Card.Img variant="top" src="special2.jpg" />
             <Card.Body>
-              <Card.Title>Special Dish 2</Card.Title>
-              <Card.Text>Description of special dish 2.</Card.Text>
+              <Card.Title>Chicken Kabab Rice</Card.Title>
+              <Card.Text>Grilled Chicken Kababs served over fragrant, spiced rice, often accompanied by a variety of sauces and fresh garnishes.</Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4} className="mb-4">
           <Card>
-            <Card.Img variant="top" src="special2.jpg" />
+            <Card.Img variant="top" src="special3.jpg" />
             <Card.Body>
-              <Card.Title>Special Dish 2</Card.Title>
-              <Card.Text>Description of special dish 3.</Card.Text>
+              <Card.Title>Hyderbadi Dum Biryani</Card.Title>
+              <Card.Text> Flavorful rice dish made with basmati rice, marinated meat,cooked together in a sealed pot using the traditional dum method.</Card.Text>
             </Card.Body>
           </Card>
         </Col>

@@ -11,8 +11,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <CarouselComponent />
       <Hero />
+      <CarouselComponent />
+      
+      
       <Features />
       <Specials />
       <Testimonials />

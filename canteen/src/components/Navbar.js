@@ -6,11 +6,18 @@ const NavbarComponent = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Nav.Link href="/">
-        <Navbar.Brand href="/">S-Cafe</Navbar.Brand></Nav.Link>
-        
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand href="/">
+          <img
+            src="./Logo.png"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="S-Cafe logo"
+          />
+          {' S-Cafe'}
+        </Navbar.Brand>
         <div>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/menu">Menu</Nav.Link>
@@ -19,6 +26,7 @@ const NavbarComponent = () => {
           </Nav>
         </Navbar.Collapse>
         </div>
+        
       </Container>
     </Navbar>
   );

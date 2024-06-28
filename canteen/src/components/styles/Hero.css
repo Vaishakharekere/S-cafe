@@ -1,6 +1,8 @@
 .hero {
-  background: url('./hero.jpeg') no-repeat center center/cover;
-  color: white;
+/*background: url(./bg1.jpeg) no-repeat center center/cover;
+*/  color: burlywood;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
   text-align: center;
   padding: 100px 20px;
 }
