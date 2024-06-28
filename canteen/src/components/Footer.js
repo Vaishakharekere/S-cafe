@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-white text-center py-4">
       <Container>
-        <p>&copy; 2024 Classy Canteen Corner. All rights reserved.</p>
+        <p>&copy; 2024 S-Cafe. All rights reserved.</p>
         <div className="social-media">
           <a href="#" className="text-white mx-2">Facebook</a>
           <a href="#" className="text-white mx-2">Twitter</a>

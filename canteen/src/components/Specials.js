@@ -7,7 +7,7 @@ const Specials = () => {
     <Container className="specials my-5">
       <h2 className="text-center">Daily Specials</h2>
       <Row>
-        <Col md={6} className="mb-4">
+        <Col md={4} className="mb-4">
           <Card>
             <Card.Img variant="top" src="special1.jpg" />
             <Card.Body>
@@ -16,12 +16,21 @@ const Specials = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6} className="mb-4">
+        <Col md={4} className="mb-4">
           <Card>
             <Card.Img variant="top" src="special2.jpg" />
             <Card.Body>
               <Card.Title>Special Dish 2</Card.Title>
               <Card.Text>Description of special dish 2.</Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4} className="mb-4">
+          <Card>
+            <Card.Img variant="top" src="special2.jpg" />
+            <Card.Body>
+              <Card.Title>Special Dish 2</Card.Title>
+              <Card.Text>Description of special dish 3.</Card.Text>
             </Card.Body>
           </Card>
         </Col>
