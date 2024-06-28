@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import "../components/styles/Login.css";
 
-
 const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -12,7 +11,7 @@ const Login = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
-      ...prevData,
+     ...prevData,
       [name]: value,
     }));
   };
@@ -30,13 +29,26 @@ const Login = () => {
   };
 
   return (
-  
     <Container className="login-container">
-      
       <Form onSubmit={handleSubmit}>
-      <h1>{isLogin ? "Login" : "Register"}</h1>
-        {isLogin ? (
+        <h1>{isLogin? "Login" : "Register"}</h1>
+        {isLogin? (
           <>
+            <Form.Check
+              inline 
+              
+              type="radio"
+              label="Admin "
+              name="radioGroup"
+              id="option1"
+            />
+            <Form.Check  
+              inline
+              type="radio"
+              label="Student/Staff"
+              name="radioGroup"
+              id="option2"
+            />
             <Form.Group controlId="formEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control
@@ -97,18 +109,17 @@ const Login = () => {
         )}
 
         <Button variant="primary" type="submit">
-          {isLogin ? "Login" : "Register"}
+          {isLogin? "Login" : "Register"}
         </Button>
         <p>
-        {isLogin
-          ? "Don't have an account? "
-          : "Already have an account? "}
-        <Button variant="link" onClick={toggleForm}>
-          {isLogin ? "Register" : "Login"}
-        </Button>
-      </p>
+          {isLogin
+           ? "Don't have an account? "
+            : "Already have an account? "}
+          <Button variant="link" onClick={toggleForm}>
+            {isLogin? "Register" : "Login"}
+          </Button>
+        </p>
       </Form>
-      
     </Container>
   );
 };

@@ -3,7 +3,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/styles/Menu.css';
-import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+import { Container, Row, Col, Card, Image ,Button} from 'react-bootstrap';
 
 const menuData = [
   {
@@ -29,6 +29,9 @@ const menuData = [
   }
 ];
 
+
+ 
+
 const Menu = () => {
   return (
     
@@ -46,6 +49,7 @@ const Menu = () => {
                 <Card.Text>
                   <strong>${item.price}</strong>
                 </Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
             </Card>
           </Col>
