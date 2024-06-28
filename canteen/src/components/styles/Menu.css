@@ -1,0 +1,9 @@
+/* src/components/styles/Menu.css */
+.menu-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-item-card {
+    margin-bottom: 20px;
+}
