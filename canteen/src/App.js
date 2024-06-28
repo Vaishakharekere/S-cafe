@@ -9,6 +9,8 @@ import Order from './pages/OrderPage';
 import Feedback from './pages/FeedbackPage';
 import Login from './pages/LoginPage';
 import Register from './pages/Register';
+import AdminDashboard from './pages/AdminDashboard';
+import UserDashboard from './pages/UserDashboard';
 
 import './App.css';
 import Navbar  from './components/Navbar';
@@ -26,6 +28,8 @@ const App = () => {
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/user-dashboard" element={<UserDashboard />} />
       </Routes>
     </Router>
   

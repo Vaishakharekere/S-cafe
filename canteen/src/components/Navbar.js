@@ -14,7 +14,8 @@ const NavbarComponent = () => {
             className="d-inline-block align-top"
             alt="S-Cafe logo"
           />
-          {' Sahyadri Cafe'}
+          {'𝒮𝒶𝒽𝓎𝒶𝒹𝓇𝒾 𝒞𝒶𝒻𝑒'}
+          {/* {'𝓢𝓪𝓱𝔂𝓪𝓭𝓻𝓲 𝓒𝓪𝓯𝓮'} */}
         </Navbar.Brand>
         <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

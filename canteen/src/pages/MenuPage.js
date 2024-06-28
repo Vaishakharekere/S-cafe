@@ -3,13 +3,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/styles/Menu.css';
-import { Container, Row, Col, Card, Image ,Button} from 'react-bootstrap';
+import { Container, Row, Col, Card, Image, Button } from 'react-bootstrap';
 
 const menuData = [
   {
     id: 1,
     name: 'Paneer butter masala',
-    description: 'Paneer  butter masala spicy gravy',
+    description: 'Paneer butter masala spicy gravy',
     price: 10.99,
     image: 'special1.jpg'
   },
@@ -43,7 +43,7 @@ const menuData = [
   },
   {
     id: 6,
-    name: 'Paneer Masala ',
+    name: 'Paneer Masala',
     description: 'Fresh mixed paneer',
     price: 8.99,
     image: 'item6.jpeg'
@@ -51,7 +51,7 @@ const menuData = [
   {
     id: 7,
     name: 'Pani puri',
-    description: 'Delicious spicy pani puri ',
+    description: 'Delicious spicy pani puri',
     price: 5,
     image: 'item7.jpeg'
   },
@@ -62,7 +62,6 @@ const menuData = [
     price: 10.99,
     image: 'item8.jpeg'
   },
-
   {
     id: 9,
     name: 'Gobi manchurian',
@@ -73,34 +72,32 @@ const menuData = [
   {
     id: 10,
     name: 'Oreo Milkshake',
-    description: 'Fresh jiuce prepared from oreo and flavours',
+    description: 'Fresh juice prepared from oreo and flavours',
     price: 4.99,
     image: 'item10.jpeg'
   }
-
 ];
-
-
- 
 
 const Menu = () => {
   return (
-    
     <Container>
-    
-       <h2 className="mb-4 text-center">Menu</h2>
+      <h2 className="mb-4 text-center">Menu</h2>
       <Row>
         {menuData.map(item => (
           <Col key={item.id} xs={12} md={4} lg={3}>
-            <Card>
-              <Image src={item.image} alt={item.name} fluid />
-              <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>{item.description}</Card.Text>
-                <Card.Text>
-                  <strong>${item.price}</strong>
-                </Card.Text>
-                <Button variant="primary">Add to Cart</Button>
+            <Card className="fixed-card-height">
+              <Image src={item.image} alt={item.name} className="fixed-dimensions" fluid />
+              <Card.Body className="fixed-card-body">
+                <div>
+                  <Card.Title>{item.name}</Card.Title>
+                  <Card.Text>{item.description}</Card.Text>
+                </div>
+                <div>
+                  <Card.Text>
+                    <strong>${item.price}</strong>
+                  </Card.Text>
+                  <Button variant="primary">Add to Cart</Button>
+                </div>
               </Card.Body>
             </Card>
           </Col>
