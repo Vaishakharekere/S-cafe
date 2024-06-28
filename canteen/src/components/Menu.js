@@ -1,35 +1,55 @@
 // src/components/Menu.js
 
-import React, { useEffect, useState } from 'react';
-import { getMenu } from '../services/menuService';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/Menu.css';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+
+const menuData = [
+  {
+    id: 1,
+    name: 'Burger',
+    description: 'Juicy beef burger with lettuce, tomato, and cheese',
+    price: 10.99,
+    image: 'special1.jpg'
+  },
+  {
+    id: 2,
+    name: 'Pizza',
+    description: 'Freshly baked pizza with mozzarella cheese and tomato sauce',
+    price: 12.99,
+    image: 'special2.jpg'
+  },
+  {
+    id: 3,
+    name: 'Salad',
+    description: 'Fresh mixed greens with cherry tomatoes and balsamic vinaigrette',
+    price: 8.99,
+    image: 'special3.jpg'
+  }
+];
 
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
-
-  useEffect(() => {
-    const fetchMenu = async () => {
-      const response = await getMenu();
-      setMenu(response.data);
-    };
-
-    fetchMenu();
-  }, []);
-
   return (
-    <div className="menu">
-      <h2>Menu</h2>
-      <div className="menu-items">
-        {menu.map(item => (
-          <div key={item.id} className="menu-item">
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>${item.price}</p>
-          </div>
+    <Container>
+      <h2 className="text-center">Menu</h2>
+      <Row>
+        {menuData.map(item => (
+          <Col key={item.id} xs={12} md={4} lg={3}>
+            <Card>
+              <Image src={item.image} alt={item.name} fluid />
+              <Card.Body>
+                <Card.Title>{item.name}</Card.Title>
+                <Card.Text>{item.description}</Card.Text>
+                <Card.Text>
+                  <strong>${item.price}</strong>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 };
 
