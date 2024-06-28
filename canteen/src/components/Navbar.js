@@ -9,12 +9,12 @@ const NavbarComponent = () => {
         <Navbar.Brand href="/">
           <img
             src="./Logo.png"
-            width="30"
-            height="30"
+            width="35"
+            height="35"
             className="d-inline-block align-top"
             alt="S-Cafe logo"
           />
-          {' S-Cafe'}
+          {' Sahyadri Cafe'}
         </Navbar.Brand>
         <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

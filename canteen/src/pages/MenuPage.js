@@ -4,7 +4,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../components/styles/Menu.css';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
-
+import Navbar from '../components/Navbar';
 const menuData = [
   {
     id: 1,
@@ -32,6 +32,7 @@ const menuData = [
 const Menu = () => {
   return (
     <Container>
+      <Navbar/>
        <h2 className="mb-4 text-center">Menu</h2>
       <Row>
         {menuData.map(item => (
