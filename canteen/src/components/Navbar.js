@@ -21,6 +21,7 @@ const NavbarComponent = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="/menu">Menu</Nav.Link>
+            <Nav.Link href="/contact">About</Nav.Link>
             <Nav.Link href="/contact">Contact Us</Nav.Link>
             <Nav.Link href="/login">Login/Register</Nav.Link>
           </Nav>

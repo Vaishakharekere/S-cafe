@@ -9,11 +9,16 @@ import Order from './pages/OrderPage';
 import Feedback from './pages/FeedbackPage';
 import Login from './pages/LoginPage';
 import Register from './pages/Register';
+
 import './App.css';
+import Navbar  from './components/Navbar';
+
 
 const App = () => {
   return (
+
     <Router>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
@@ -23,6 +28,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
+  
   );
 };
 

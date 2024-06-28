@@ -10,7 +10,7 @@ import CarouselComponent from '../components/CarouselComponent';
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <CarouselComponent />
       
