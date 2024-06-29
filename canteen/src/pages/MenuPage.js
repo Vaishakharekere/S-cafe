@@ -8,8 +8,8 @@ import { Container, Row, Col, Card, Image, Button } from 'react-bootstrap';
 const menuData = [
   {
     id: 1,
-    name: 'Paneer butter masala',
-    description: 'Paneer butter masala spicy gravy',
+    name: 'Paneer Butter Masala',
+    description: 'Paneer Butter Masala spicy gravy',
     price: 10.99,
     image: 'special1.jpg'
   },
@@ -29,35 +29,35 @@ const menuData = [
   },
   {
     id: 4,
-    name: 'sandwich',
-    description: 'spicy mix sandwich',
+    name: 'Sandwich',
+    description: 'Spicy mix Grilled Gandwich',
     price: 8.99,
     image: 'sandwich.jpg'
   },
   {
     id: 5,
     name: 'Roti',
-    description: 'Fresh mixed gravy with tasty Rotis',
+    description: 'Fresh mixed Gravy with tasty Rotis',
     price: 8.99,
     image: 'item5.jpeg'
   },
   {
     id: 6,
-    name: 'Paneer Masala',
-    description: 'Fresh mixed paneer',
+    name: 'Paneer Tikka Masala',
+    description: 'Fresh mixed Paneer with Red Chilli and Spices ',
     price: 8.99,
     image: 'item6.jpeg'
   },
   {
     id: 7,
     name: 'Pani puri',
-    description: 'Delicious spicy pani puri',
+    description: 'Delicious Spicy Pani puri',
     price: 5,
     image: 'item7.jpeg'
   },
   {
     id: 8,
-    name: 'kaju masala',
+    name: 'Kaju Masala',
     description: 'Fresh mixed gravy with kaju and spics',
     price: 10.99,
     image: 'item8.jpeg'
@@ -65,14 +65,14 @@ const menuData = [
   {
     id: 9,
     name: 'Gobi manchurian',
-    description: 'Fresh mixed Gobi manchurian',
+    description: 'Gobi Mnchurian with Soya Sauce and Red Chilli Sauce',
     price: 13.99,
     image: 'item9.jpeg'
   },
   {
     id: 10,
     name: 'Oreo Milkshake',
-    description: 'Fresh juice prepared from oreo and flavours',
+    description: 'Fresh juice prepared from Oreo and flavours',
     price: 4.99,
     image: 'item10.jpeg'
   }
