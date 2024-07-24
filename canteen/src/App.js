@@ -14,7 +14,7 @@ import UserDashboard from './pages/UserDashboard';
 
 import './App.css';
 import Navbar  from './components/Navbar';
-
+import AboutUs from './pages/AboutUs';
 
 const App = () => {
   return (
@@ -30,6 +30,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </Router>
   
