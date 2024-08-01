@@ -1,0 +1,10 @@
+/* custom.css */
+.custom-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }

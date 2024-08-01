@@ -36,17 +36,68 @@
         font-family: 'Times New Roman', Times, serif;
       }
       
+    
       form button {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        background-color: #28a745;
-        color: #fff;
+        position: relative;
+        background-color: #007bff;
+        color: white;
         border: none;
+        padding: 10px 20px;
+        font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
+        overflow: hidden; /* Ensure stars don't overflow */
+      }
+
+
+     form button:hover .stars{
+        display: block;
+        filter: drop-shadow( 0 0 10px #fffdef);
+      }
+      
+      /* Custom button styles */
+      form button {
+        position: relative;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        overflow: hidden; /* Ensure stars don't overflow */
+      }
+      
+       form button .stars {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none; /* Hide stars by default */
+        font-size: 24px;
+        color: #fff;
+        filter: drop-shadow(0 0 10px #fffdef); /* Drop-shadow effect */
+        z-index: 10; /* Ensure stars are on top */
+      }
+      
+  
+      
+      /* Optional: Add a transition for smooth appearance */
+      form button {
+        transition: color 0.3s ease;
       }
       
       form button:hover {
-        background-color: #218838;
+        color: #0056b3; /* Change text color on hover */
       }
-
+      
+      /* Keyframes for logo spinning animation */
+      @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    

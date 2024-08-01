@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card,Button } from 'react-bootstrap';
 import './styles/Specials.css';
+import './custom.css';
 
 const Specials = () => {
   return (
@@ -13,7 +14,7 @@ const Specials = () => {
             <Card.Body>
               <Card.Title>Paneer Butter Masala</Card.Title>
               <Card.Text>Paneer Butter Masala is a rich and creamy North Indian curry made with paneer in a spiced tomato and butter gravy.</Card.Text>
-              <Button variant="primary">Add to Cart</Button>
+              <Button className='custom-button'>Add to Cart</Button>
             </Card.Body>
           
           </Card>
@@ -24,7 +25,7 @@ const Specials = () => {
             <Card.Body>
               <Card.Title>Chicken Kabab Rice</Card.Title>
               <Card.Text>Grilled Chicken Kababs served over fragrant, spiced rice, often accompanied by a variety of sauces and fresh garnishes.</Card.Text>
-              <Button variant="primary">Add to Cart</Button>
+              <Button className='custom-button'>Add to Cart</Button>
             </Card.Body>
             
           </Card>
@@ -35,7 +36,7 @@ const Specials = () => {
             <Card.Body>
               <Card.Title>Hyderbadi Dum Biryani</Card.Title>
               <Card.Text> Flavorful rice dish made with basmati rice, marinated meat,cooked together in a sealed pot using the traditional dum method.</Card.Text>
-              <Button variant="primary">Add to Cart</Button>
+              <Button className='custom-button'>Add to Cart</Button>
             </Card.Body>
             
           </Card>

@@ -1,33 +1,52 @@
-/* src/components/styles/Menu.css */
-.menu-container {
-    text-align: center;
-    margin-top: 50px;
+/* Menu.css */
+
+/* Container styles */
+.container {
+  margin-top: 20px;
 }
 
-.menu-item-card {
-    margin-bottom: 20px;
-   padding-bottom: 20px;
+/* Card styles */
+.fixed-card-height {
+  height: 100%; /* Ensures all cards are the same height */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.2s; /* Smooth hover effect */
 }
-/* src/components/styles/Menu.css */
 
-/* Set fixed dimensions for the images */
+.fixed-card-height:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Image styles */
 .fixed-dimensions {
-    width: 100%;
-    height: 300px; /* Adjust the height as needed */
-    object-fit: cover; /* This ensures the image covers the entire area without stretching */
-  }
-  
-  /* Set a fixed height for the card */
-  .fixed-card-height {
-    height: 100%; /* This makes sure the card takes up the full height of the parent container */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .fixed-card-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+  border-top-left-radius: 10px; /* Rounded corners for the top */
+  border-top-right-radius: 10px; /* Rounded corners for the top */
+}
+
+/* Card body styles */
+.fixed-card-body {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Space between title, description, and button */
+  padding: 15px; /* Padding for the card body */
+}
+
+/* Button styles */
+.custom-button {
+  background-color: #4CAF50; /* Custom green color */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.custom-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+/* Menu.css */
+.row-gap {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}

@@ -1,6 +1,8 @@
+
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import './styles/Testimonials.css';
+import './custom.css';
 
 const Testimonials = () => {
   const [reviews, setReviews] = useState([
@@ -49,7 +51,7 @@ const Testimonials = () => {
             placeholder="Enter your name"
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button className='custom-button' type="submit">
           Add Review
         </Button>
       </Form>

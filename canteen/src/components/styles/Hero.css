@@ -1,8 +1,9 @@
 .hero {
 /*background: url(./bg1.jpeg) no-repeat center center/cover;
-*/  color: burlywood;
+*/  color: #444444;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif; 
   text-align: center;
   padding: 100px 20px;
+  background: linear-gradient(90deg, #DEB887, #FAFAD2);
 }

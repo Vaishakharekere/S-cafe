@@ -1,6 +1,6 @@
 // src/pages/AboutUs.js
 import React from 'react';
-
+import sahyadri from './sahyadri.jpeg';
 const AboutUs = () => {
   return (
     <div className="container mt-5">
@@ -13,9 +13,10 @@ const AboutUs = () => {
       <div className="row mt-4">
         <div className="col-md-6">
           <img
-            src="https://sahyadri.edu.in/images/gallery1/campus/Sahyadri-Food-Court.jpg"
+            src={sahyadri}
             alt="Sahyadri"
             className="img-fluid rounded"
+    
           />
         </div>
         <div className="col-md-6">

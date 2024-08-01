@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import './styles/Hero.css';
+import './custom.css';
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <Container className="text-center">
         <h1>Welcome to Sahyadri Cafe</h1>
         <p>Your one-stop solution for delicious meals on campus.</p>
-        <Button variant="primary" href="/menu">View Menu</Button>
+        <Button className='custom-button' href="/menu">View Menu</Button>
       </Container>
     </div>
   );

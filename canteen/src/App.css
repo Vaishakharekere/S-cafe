@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+/* Animation for the logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -24,10 +25,60 @@
   color: white;
 }
 
+/* Font class for Bitter font */
+.bitter {
+  font-family: "Bitter", serif;
+  font-style: normal;
+}
+
+/* Link styling */
 .App-link {
   color: #61dafb;
 }
+.button:hover .stars{
+  display: block;
+  filter: drop-shadow( 0 0 10px #fffdef);
+}
 
+/* Custom button styles */
+.button {
+  position: relative;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden; /* Ensure stars don't overflow */
+}
+
+.button .stars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide stars by default */
+  font-size: 24px;
+  color: #fff;
+  filter: drop-shadow(0 0 10px #fffdef); /* Drop-shadow effect */
+  z-index: 10; /* Ensure stars are on top */
+}
+
+.button:hover .stars {
+  display: block; /* Show stars on hover */
+}
+
+/* Optional: Add a transition for smooth appearance */
+.button {
+  transition: color 0.3s ease;
+}
+
+.button:hover {
+  color: #0056b3; /* Change text color on hover */
+}
+
+/* Keyframes for logo spinning animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

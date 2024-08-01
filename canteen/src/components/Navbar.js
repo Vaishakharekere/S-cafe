@@ -15,7 +15,6 @@ const NavbarComponent = () => {
             alt="S-Cafe logo"
           />
           {'𝒮𝒶𝒽𝓎𝒶𝒹𝓇𝒾 𝒞𝒶𝒻𝑒'}
-          {/* {'𝓢𝓪𝓱𝔂𝓪𝓭𝓻𝓲 𝓒𝓪𝓯𝓮'} */}
         </Navbar.Brand>
         <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,7 +27,6 @@ const NavbarComponent = () => {
           </Nav>
         </Navbar.Collapse>
         </div>
-        
       </Container>
     </Navbar>
   );

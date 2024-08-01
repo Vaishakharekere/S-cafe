@@ -1,5 +1,52 @@
-/* src/components/styles/Register.css */
-.register-container {
+/* src/components/styles/Login.css */
+.register-container form {
+    max-width: 500px;
+    margin: 100px  auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  h1 {
     text-align: center;
-    margin-top: 50px;
-}
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-stretch: expanded;
+    font-style: unset;
+  }
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="date"],
+  form input[type="time"],
+  form input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  form button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+
